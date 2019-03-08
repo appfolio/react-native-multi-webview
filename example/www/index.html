@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Page</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <a href="#" class="js-new-window">Open Sub Window</a>
+    <textarea class="js-communication" cols="50" rows="10"></textarea>
+    <form class="js-communication-sender">
+      <input type="text" name="" class="js-communication-sender-text">
+      <input type="submit" value="Send">
+    </form>
+    <script type="text/javascript">
+      document.querySelector('.js-new-window').addEventListener('click', (event) => {
+        event.preventDefault();
+        window.newWindow = window.open('http://localhost:8082/sub.html', '_blank');
+        window.newWindow.addEventListener('DOMContentLoaded', () => {
+          var textbox = document.querySelector('.js-communication');
+          textbox.value = `${textbox.value}Child loaded\n`;
+          textbox.scrollTop = textbox.scrollHeight;
+          window.newWindow.postMessage('Hello from parent!\n', '*');
+        });
+      });
+      document.querySelector('.js-communication-sender').addEventListener('submit', (event) => {
+        event.preventDefault();
+        var textbox = document.querySelector('.js-communication-sender-text');
+        window.newWindow.postMessage(textbox.value + '\n', '*');
+        textbox.value = '';
+      });
+    </script>
+  </body>
+</html>

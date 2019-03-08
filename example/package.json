@@ -10,7 +10,8 @@
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.58.6",
-    "react-native-multi-webview": "file:../"
+    "react-native-multi-webview": "file:../",
+    "react-native-webview": "https://github.com/appfolio/react-native-webview.git#use-strong-property"
   },
   "devDependencies": {
     "babel-core": "^7.0.0-bridge.0",
