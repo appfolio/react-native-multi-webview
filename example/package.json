@@ -10,7 +10,10 @@
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.58.6",
+    "react-native-gesture-handler": "^1.1.0",
     "react-native-multi-webview": "file:../",
+    "react-native-reanimated": "^1.0.0-alpha.12",
+    "react-native-tab-view": "^2.0.1",
     "react-native-webview": "https://github.com/appfolio/react-native-webview.git#use-strong-property"
   },
   "devDependencies": {

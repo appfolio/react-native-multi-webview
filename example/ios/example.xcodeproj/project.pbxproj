@@ -37,9 +37,11 @@
 		2DCD954D1E0B4F2C00145EB5 /* exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* exampleTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		730E88A622308ED700269A52 /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 730E88A422308EA800269A52 /* libRNCWebView.a */; };
+		730E8A382232638000269A52 /* libAEMultiWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 730E89BE223256C600269A52 /* libAEMultiWebView.a */; };
+		730E8A392232638C00269A52 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 730E8A322232634A00269A52 /* libRNGestureHandler.a */; };
+		730E8A3A2232639400269A52 /* libRNReanimated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 730E8A372232634A00269A52 /* libRNReanimated.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		CEDA02EF5DE54216B75B37DA /* libAEMultiWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E01815918F48F3B58B9EAE /* libAEMultiWebView.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
@@ -311,6 +313,27 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = AEMultiWebView;
 		};
+		730E8A312232634A00269A52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4839386E9FFA481786F4BAAF /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNGestureHandler;
+		};
+		730E8A332232634A00269A52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4839386E9FFA481786F4BAAF /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5C32A36220C603B000FFB8D;
+			remoteInfo = "RNGestureHandler-tvOS";
+		};
+		730E8A362232634A00269A52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AACE61F18FC34A4693222D68 /* RNReanimated.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNReanimated;
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -358,11 +381,12 @@
 		2D02E47B1E0B4A5D006451C7 /* example-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* example-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "example-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4839386E9FFA481786F4BAAF /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		6464E38E7F65436EBAE0C9AF /* AEMultiWebView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = AEMultiWebView.xcodeproj; path = "../node_modules/react-native-multi-webview/ios/AEMultiWebView.xcodeproj"; sourceTree = "<group>"; };
-		77E01815918F48F3B58B9EAE /* libAEMultiWebView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libAEMultiWebView.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		AACE61F18FC34A4693222D68 /* RNReanimated.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNReanimated.xcodeproj; path = "../node_modules/react-native-reanimated/ios/RNReanimated.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -395,7 +419,9 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				730E88A622308ED700269A52 /* libRNCWebView.a in Frameworks */,
-				CEDA02EF5DE54216B75B37DA /* libAEMultiWebView.a in Frameworks */,
+				730E8A382232638000269A52 /* libAEMultiWebView.a in Frameworks */,
+				730E8A392232638C00269A52 /* libRNGestureHandler.a in Frameworks */,
+				730E8A3A2232639400269A52 /* libRNReanimated.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,18 +595,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		730E8993223256C400269A52 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				77E01815918F48F3B58B9EAE /* libAEMultiWebView.a */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		730E89BA223256C600269A52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				730E89BE223256C600269A52 /* libAEMultiWebView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		730E8A2B2232634900269A52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				730E8A372232634A00269A52 /* libRNReanimated.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		730E8A2D2232634900269A52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				730E8A322232634A00269A52 /* libRNGestureHandler.a */,
+				730E8A342232634A00269A52 /* libRNGestureHandler-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -611,6 +646,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				2C8B4582362740C19C2E6EA1 /* RNCWebView.xcodeproj */,
 				6464E38E7F65436EBAE0C9AF /* AEMultiWebView.xcodeproj */,
+				AACE61F18FC34A4693222D68 /* RNReanimated.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -629,10 +665,10 @@
 			children = (
 				13B07FAE1A68108700A75B9A /* example */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				4839386E9FFA481786F4BAAF /* RNGestureHandler.xcodeproj */,
 				00E356EF1AD99517003FC87E /* exampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				730E8993223256C400269A52 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -825,6 +861,14 @@
 				{
 					ProductGroup = 730E889B22308EA800269A52 /* Products */;
 					ProjectRef = 2C8B4582362740C19C2E6EA1 /* RNCWebView.xcodeproj */;
+				},
+				{
+					ProductGroup = 730E8A2D2232634900269A52 /* Products */;
+					ProjectRef = 4839386E9FFA481786F4BAAF /* RNGestureHandler.xcodeproj */;
+				},
+				{
+					ProductGroup = 730E8A2B2232634900269A52 /* Products */;
+					ProjectRef = AACE61F18FC34A4693222D68 /* RNReanimated.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1090,6 +1134,27 @@
 			remoteRef = 730E89BD223256C600269A52 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		730E8A322232634A00269A52 /* libRNGestureHandler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGestureHandler.a;
+			remoteRef = 730E8A312232634A00269A52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		730E8A342232634A00269A52 /* libRNGestureHandler-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNGestureHandler-tvOS.a";
+			remoteRef = 730E8A332232634A00269A52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		730E8A372232634A00269A52 /* libRNReanimated.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNReanimated.a;
+			remoteRef = 730E8A362232634A00269A52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1253,12 +1318,17 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-multi-webview/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = exampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1280,12 +1350,17 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-multi-webview/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = exampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1308,6 +1383,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-multi-webview/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1331,6 +1408,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-multi-webview/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1361,11 +1440,16 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-multi-webview/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1396,11 +1480,16 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-multi-webview/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1430,11 +1519,16 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-multi-webview/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1464,11 +1558,16 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-webview/ios",
 					"$(SRCROOT)/../node_modules/react-native-multi-webview/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
