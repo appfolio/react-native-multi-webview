@@ -26,13 +26,11 @@ export default class App extends Component<Props> {
 
   render() {
     return (
-      <SafeAreaView style={{ flex: 1 }}>
         <MultiWebView
           incognito
           source={{ uri: 'http://localhost:8082/' }}
           style={{ flex: 1 }}
         />
-      </SafeAreaView>
     );
   }
 }
